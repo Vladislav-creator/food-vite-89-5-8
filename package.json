@@ -1,11 +1,11 @@
 {
-  "name": "food-vite-89-5-7",
+  "name": "food-vite-89-5-8",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/food-vite-89-5-7/",
+    "build": "vite build --base=/food-vite-89-5-8/",
     "preview": "vite preview"
   },
   "devDependencies": {

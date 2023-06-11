@@ -55,13 +55,10 @@ body {
 }
 .container {
   margin: 0 auto;
+  width: 320px;
+  padding: 0 20px;
 }
-@media screen and (max-width: 767px) {
-  .container {
-    width: 320px;
-    padding: 0 20px;
-  }
-}
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -79,7 +76,24 @@ body {
   font-weight: var(--buttom-font-wieght);
   font-size: var(--buttom-font-size);
   border-radius: 30px;
-  min-width: 103px;
-  height: 42px;
+  min-width: 98px;
+  height: 32px;
   padding: 6px 18px;
+  background-color: var(--green-color);
+}
+.green-button:hover,
+.green-button:focus {
+  background-color: var(--yellow-main);
+}
+.title-section {
+  font-family: var(--main-font-family);
+  font-weight: var(--title-font-weight);
+  font-size: 28px;
+  line-height: 1.17;
+  color: #2c2c2c;
+}
+.text-description {
+  font-family: var(--main-font-family);
+  line-height: 1.5;
+  color: #2c2c2c;
 }

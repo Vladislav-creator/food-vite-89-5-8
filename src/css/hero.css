@@ -1,0 +1,16 @@
+.text-description {
+  max-width: 266px;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .text-description {
+    max-width: 336px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .text-description {
+    max-width: 515px;
+  }
+}

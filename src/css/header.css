@@ -11,51 +11,6 @@
   width: 66px;
   height: 52px;
 }
-@media screen and (min-width: 768px) {
-  .mobile-menu {
-    display: none;
-  }
-  .mobile-menu-open-btn {
-    display: none;
-  }
-  .top-navigation {
-    margin-left: auto;
-    margin-right: 30px;
-  }
-  .navigation-list {
-    display: flex;
-    gap: 28px;
-  }
-  .navigation-link {
-    color: var(--black-color);
-    font-size: var(--secondary-text-size);
-    line-height: var(--secondary-line-height);
-    transition: text-decotarion var(--transition-duration)
-        var(--transition-timing-function),
-      color var(--transition-duration) var(--transition-timing-function),
-      font-weight var(--transition-duration) var(--transition-timing-function);
-  }
-  .navigation-link:hover,
-  .navigation-link:focus {
-    color: var(--green-color);
-    text-decoration: underline;
-    font-weight: var(--title-font-weight);
-  }
-  .green-button {
-    background-color: var(--green-color);
-    transition: background-color var(--transition-duration)
-      var(--transition-timing-function);
-  }
-  .green-button:hover,
-  .green-button:focus {
-    background-color: var(--yellow-main);
-  }
-}
-@media screen and (min-width: 320px) {
-  .container {
-    width: 320px;
-  }
-}
 @media screen and (max-width: 768px) {
   .top-navigation {
     display: none;
@@ -124,4 +79,55 @@
 .green-button:hover,
 .green-button:focus {
   background-color: var(--yellow-main);
+}
+
+@media screen and (min-width: 768px) {
+  .header-tablet {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .mobile-menu-open-btn {
+    display: none;
+  }
+  .top-navigation {
+    margin-left: auto;
+    margin-right: 30px;
+  }
+  .navigation-list {
+    display: flex;
+    gap: 28px;
+  }
+  .navigation-link {
+    color: var(--black-color);
+    font-size: var(--secondary-text-size);
+    line-height: var(--secondary-line-height);
+    transition: text-decotarion var(--transition-duration)
+        var(--transition-timing-function),
+      color var(--transition-duration) var(--transition-timing-function),
+      font-weight var(--transition-duration) var(--transition-timing-function);
+  }
+  .navigation-link:hover,
+  .navigation-link:focus {
+    color: var(--green-color);
+    text-decoration: underline;
+    font-weight: var(--title-font-weight);
+  }
+  .green-button {
+    transition: background-color var(--transition-duration)
+      var(--transition-timing-function);
+  }
+  .header-button {
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header-tablet {
+    display: flex;
+    align-items: center;
+  }
+  .header-button {
+    margin-left: 30px;
+  }
 }
