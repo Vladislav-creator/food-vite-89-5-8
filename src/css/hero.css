@@ -20,6 +20,10 @@
 .img-hero {
   width: 100%;
 }
+.hero-slider-btn {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .title-section.title-hero {
     font-size: 42px;
@@ -32,7 +36,7 @@
     font-size: 16px;
     margin-bottom: 40px;
   }
-  .slider-field {
+  .slider-area {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +50,6 @@
     display: block;
     width: 100%;
   }
-
   .slider-js {
     position: absolute;
     right: 32px;
@@ -64,13 +67,36 @@
     width: 515.3px;
     font-size: 48px;
   }
-  .slider-js {
-    position: absolute;
-    right: 0;
-    top: 27px;
-  }
-  .slider-field {
+
+  .slider-area {
+    position: relative;
     width: 560px;
     height: 560px;
+  }
+
+  .hero-slider-btn {
+    display: block;
+    position: absolute;
+    top: 230px;
+    left: -35px;
+    width: 48px;
+    height: 48px;
+    z-index: 10;
+    cursor: pointer;
+    background-color: #fefefe;
+    border-width: 0;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      border-radius 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
+  }
+
+  .slider-icon {
+    stroke: #2c2c2c;
   }
 }
