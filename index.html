@@ -16,8 +16,8 @@
       rel="stylesheet"
     />
     <title>Food-vite-89-5-7</title>
-    <script type="module" crossorigin src="/food-vite-89-5-8/assets/index-09c06fe3.js"></script>
-    <link rel="stylesheet" href="/food-vite-89-5-8/assets/index-c8eff5aa.css">
+    <script type="module" crossorigin src="/food-vite-89-5-8/assets/index-b3101ae5.js"></script>
+    <link rel="stylesheet" href="/food-vite-89-5-8/assets/index-d2f8eaee.css">
   </head>
   <body>
     <header class="top">
@@ -115,15 +115,25 @@
     <div class="slider-js">
       <div class="slider-field">
         <picture>
-          <sourсe media="(min-width: 1280px)"
-          srcset="./img/hero/desktop-hero512.png,
-          ./img/hero/desktop-hero1022@2x.png 2x" type=“image/png” /> <sourсe
-          media="(min-width: 768px)" srcset="./img/hero/tablet-hero292.png,
-          ./img/hero/tablet-hero584@2x.png 2x" type=“image/png” />
+          <source
+            srcset="
+              ../img/hero/desktop-hero512.png     1x,
+              ../img/hero/desktop-hero1022@2x.png 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ../img/hero/tablet-hero292.png    1x,
+              ../img/hero/tablet-hero584@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
           <img
-            class="hero-image"
-            src="/food-vite-89-5-8/assets/desktop-hero1022@2x-48853165.png"
-            alt="Food"
+            class="img-hero"
+            src="../img/hero/tablet-hero584@2x.png"
+            alt="food"
+            loading="lazy"
           />
         </picture>
       </div>
