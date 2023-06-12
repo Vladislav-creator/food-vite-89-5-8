@@ -88,8 +88,6 @@ body {
 .title-section {
   font-family: var(--main-font-family);
   font-weight: var(--title-font-weight);
-  font-size: 28px;
-  line-height: 1.17;
   color: #2c2c2c;
 }
 .text-description {

@@ -1,7 +1,9 @@
 <section class="hero-section">
-  <div class="container">
-    <h1 class="title-section">Enjoy Your Favorite Food From Anywhere</h1>
-    <p class="text-description">
+  <div class="container hero-container">
+    <h1 class="title-section title-hero">
+      Enjoy Your Favorite Food From Anywhere
+    </h1>
+    <p class="text-description text-hero">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
       varius enim in eros elementum tristique. Duis cursus, mi quis viverra
       ornare, eras dolor interdum nulla, ut commodo diam libero vitae erat.
@@ -13,5 +15,22 @@
     >
       Order Now
     </button>
+    <div class="slider-js">
+      <div class="slider-field">
+        <picture>
+          <sourse media="(min-width: 1280px)"
+          srcset="../img/hero/desktop-hero512.png 1x,
+          ../img/hero/desktop-hero1022@2x.png 2x" type=“image/png” /> <sourse
+          media="(min-width: 768px)" srcset="../img/hero/tablet-hero292.png 1x,
+          ../img/hero/tablet-hero584@2x.png 2x" type=“image/png” />
+          <img
+            class="hero-image"
+            src="../img/hero/tablet-hero584@2x.png"
+            alt="Food"
+            loading="“lazy”"
+          />
+        </picture>
+      </div>
+    </div>
   </div>
 </section>
