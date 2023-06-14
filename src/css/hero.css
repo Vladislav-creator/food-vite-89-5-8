@@ -3,9 +3,7 @@
   font-size: 14px;
   margin-bottom: 28px;
 }
-.slider-field {
-  display: none;
-}
+
 .title-section.title-hero {
   font-size: 28px;
   line-height: 1.17;
@@ -23,8 +21,16 @@
 .hero-slider-btn {
   display: none;
 }
-
+.img-hero-desktop-first {
+  display: none;
+}
+.img-hero-desktop {
+  display: none;
+}
 @media screen and (min-width: 768px) {
+  .img-hero-desktop-first {
+    display: block;
+  }
   .title-section.title-hero {
     font-size: 42px;
     line-height: 1.2;
@@ -36,27 +42,28 @@
     font-size: 16px;
     margin-bottom: 40px;
   }
-  .slider-area {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: block;
+  .container-area {
+    position: absolute;
+    right: 0;
+    top: 108px;
+  }
+  .slider {
     width: 320px;
     height: 320px;
     border-radius: 50%;
-    border: 14px solid #ffe550;
-  }
-  .img-hero {
-    display: block;
-    width: 100%;
-  }
-  .slider-js {
-    position: absolute;
-    right: 32px;
-    top: 110px;
+    border: 14px solid rgba(255, 229, 80, 1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 1280px) {
+  .img-hero-desktop {
+    display: flex;
+  }
   .text-description.text-hero {
     max-width: 515px;
     margin-bottom: 46.33px;
@@ -68,7 +75,27 @@
     font-size: 48px;
   }
 
-  .slider-area {
+  .slider {
+    width: 560px;
+    height: 560px;
+  }
+  .slider-btn {
+    display: flex;
+  }
+  .slider-line {
+    display: flex;
+    width: 1533px;
+    position: absolute;
+    left: 9px;
+    transition: all ease 1s;
+  }
+  .container-area {
+    position: absolute;
+    right: 0;
+    top: 30px;
+  }
+
+  .container-slider {
     position: relative;
     width: 560px;
     height: 560px;
@@ -94,15 +121,18 @@
     display: flex;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
   }
-  .hero-slider-btn:first-child {
-    top: 230px;
-    left: -35px;
-  }
-  .hero-slider-btn:last-child {
-    top: 230px;
-    right: -35px;
-  }
   .slider-icon {
     stroke: #2c2c2c;
+  }
+  .right-btn {
+    right: -20px;
+    top: 250px;
+  }
+  .left-btn {
+    left: -25px;
+    top: 250px;
+  }
+  .img-hero-desktop-first {
+    margin-left: 3px;
   }
 }

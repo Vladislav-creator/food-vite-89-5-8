@@ -15,40 +15,60 @@
     >
       Order Now
     </button>
-    <div class="slider-js">
-      <div class="slider-area">
-        <button class="hero-slider-btn" type="button" aria-label="previous">
+    <div class="container-area">
+      <div class="container-slider">
+        <button
+          class="hero-slider-btn left-btn"
+          type="button"
+          aria-label="previous"
+        >
           <svg class="slider-arrow" width="30" height="30">
             <use class="slider-icon" href="./img/icons.svg#icon-v-left"></use>
           </svg>
         </button>
-        <picture>
-          <source
-            srcset="
-              ./img/hero/desktop-hero512.png     1x,
-              ./img/hero/desktop-hero1022@2x.png 2x
-            "
-            media="(min-width: 1280px)"
-          />
-          <source
-            srcset="
-              ./img/hero/tablet-hero292.png    1x,
-              ./img/hero/tablet-hero584@2x.png 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <img
-            class="img-hero"
-            src="./img/hero/tablet-hero584@2x.png"
-            alt="food"
-            loading="lazy"
-          />
-        </picture>
-        <button class="hero-slider-btn" type="button" aria-label="previous">
+        <button
+          class="hero-slider-btn right-btn"
+          type="button"
+          aria-label="previous"
+        >
           <svg class="slider-arrow" width="30" height="30">
             <use class="slider-icon" href="./img/icons.svg#icon-v-right"></use>
           </svg>
         </button>
+        <div class="slider">
+          <div class="slider-line">
+            <!-- <picture>
+            <source
+              srcset="
+                ./img/hero/desktop-hero512.png     1x,
+                ./img/hero/desktop-hero1022@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./img/hero/tablet-hero292.png    1x,
+                ./img/hero/tablet-hero584@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            /> --><img
+              class="img-hero img-hero-desktop-first"
+              src="./img/hero/desktop-hero512.png"
+              alt=""
+              width="511"
+            /><img
+              class="img-hero img-hero-desktop"
+              src="./img/hero/desktop-hero-2.png"
+              alt=""
+              width="511"
+            /><img
+              class="img-hero img-hero-desktop"
+              src="./img/hero/desktop-hero-3.png"
+              alt=""
+              width="511"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </div>
