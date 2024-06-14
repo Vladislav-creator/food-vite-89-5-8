@@ -15,8 +15,10 @@
   position: relative;
   padding: 60px 0;
 }
+
 .img-hero {
-  width: 100%;
+ padding: 25px;
+
 }
 .hero-slider-btn {
   display: none;
@@ -46,6 +48,9 @@
     position: absolute;
     right: 0;
     top: 108px;
+  
+    width: 530px;
+    height: 530px;
   }
   .slider {
     width: 320px;
@@ -55,9 +60,9 @@
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;*/
     position: relative;
-    overflow: hidden;
+     overflow: hidden; 
   }
 }
 @media screen and (min-width: 1280px) {
@@ -76,8 +81,8 @@
   }
 
   .slider {
-    width: 560px;
-    height: 560px;
+    width: 530px;
+    height: 530px;
   }
   .slider-btn {
     display: flex;
@@ -85,18 +90,17 @@
   .slider-line {
     display: flex;
     width: 1533px;
+   
     position: absolute;
-    left: 9px;
+    left: -16px;
     transition: all ease 1s;
   }
   .container-area {
-    position: absolute;
     right: 0;
     top: 30px;
   }
 
   .container-slider {
-    position: relative;
     width: 560px;
     height: 560px;
   }
@@ -125,14 +129,12 @@
     stroke: #2c2c2c;
   }
   .right-btn {
-    right: -20px;
+    right: -25px;
     top: 250px;
   }
   .left-btn {
     left: -25px;
     top: 250px;
   }
-  .img-hero-desktop-first {
-    margin-left: 3px;
-  }
+ 
 }
