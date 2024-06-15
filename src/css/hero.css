@@ -18,7 +18,14 @@
 
 .img-hero {
  padding: 25px;
-
+ position: relative;
+}
+/* .name-of-dishes {
+  
+} */
+.dish-names-container{
+  display: flex;
+  justify-content: center; 
 }
 .hero-slider-btn {
   display: none;
@@ -60,7 +67,7 @@
 
     display: flex;
     align-items: center;
-    /*justify-content: center;*/
+   
     position: relative;
      overflow: hidden; 
   }
